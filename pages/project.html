@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Portfolio - IT Consulting</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 2rem 0;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      header p {
+        font-size: 1.1rem;
+        opacity: 0.9;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .portfolio {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      .project-card {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .project-image {
+        width: 100%;
+        height: 200px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 3rem;
+      }
+
+      .project-content {
+        padding: 1.5rem;
+      }
+
+      .project-content h3 {
+        color: #667eea;
+        margin-bottom: 0.5rem;
+      }
+
+      .project-content p {
+        color: #666;
+        margin-bottom: 1rem;
+        font-size: 0.95rem;
+      }
+
+      .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .tech-tag {
+        background-color: #e8e8f5;
+        color: #667eea;
+        padding: 0.3rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.85rem;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: #667eea;
+        color: white;
+        padding: 0.6rem 1.2rem;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #764ba2;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        margin-top: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Project Portfolio</h1>
+      <p>IT Consulting Solutions</p>
+    </header>
+
+    <div class="container">
+      <div class="portfolio">
+        <div class="project-card">
+          <div class="project-image">💼</div>
+          <div class="project-content">
+            <h3>Enterprise ERP Migration</h3>
+            <p>
+              Successfully migrated legacy ERP system to cloud infrastructure,
+              improving efficiency by 40%.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-tag">Azure</span>
+              <span class="tech-tag">SAP</span>
+              <span class="tech-tag">Cloud</span>
+            </div>
+            <a href="#" class="btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">🔒</div>
+          <div class="project-content">
+            <h3>Cybersecurity Audit</h3>
+            <p>
+              Comprehensive security assessment and implementation of advanced
+              threat detection systems.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-tag">Security</span>
+              <span class="tech-tag">Compliance</span>
+              <span class="tech-tag">GDPR</span>
+            </div>
+            <a href="#" class="btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">📊</div>
+          <div class="project-content">
+            <h3>Data Analytics Platform</h3>
+            <p>
+              Built real-time analytics platform enabling data-driven decision
+              making across departments.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">BigData</span>
+              <span class="tech-tag">BI</span>
+            </div>
+            <a href="#" class="btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">🌐</div>
+          <div class="project-content">
+            <h3>Digital Transformation</h3>
+            <p>
+              End-to-end digital transformation strategy and implementation for
+              multinational corporation.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-tag">Strategy</span>
+              <span class="tech-tag">DevOps</span>
+              <span class="tech-tag">Automation</span>
+            </div>
+            <a href="#" class="btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">⚙️</div>
+          <div class="project-content">
+            <h3>Infrastructure Optimization</h3>
+            <p>
+              Optimized IT infrastructure reducing operational costs by 35%
+              while improving reliability.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-tag">AWS</span>
+              <span class="tech-tag">Infrastructure</span>
+              <span class="tech-tag">Kubernetes</span>
+            </div>
+            <a href="#" class="btn">View Details</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">🤖</div>
+          <div class="project-content">
+            <h3>AI Integration Solution</h3>
+            <p>
+              Implemented AI-powered solutions for process automation and
+              customer service enhancement.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-tag">AI/ML</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">NLP</span>
+            </div>
+            <a href="#" class="btn">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 IT Consulting. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
